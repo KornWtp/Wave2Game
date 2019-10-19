@@ -16,32 +16,33 @@ public class Help {
 	private String infoString1 = "Use WSAD or arrows to move and dodge the enemies.";
 	private String infoString2 = "Press ESC for Menu.";
 
+	public void tick() {
+	}
 
-	public void tick(){}
-	
-	public void render(Graphics g){
+	public void render(Graphics g) {
 		Font fnt = new Font("arial", Font.PLAIN, 50);
 		Font fnt2 = new Font("arial", Font.PLAIN, 30);
 		Font fnt3 = new Font("arial", Font.PLAIN, 18);
 		g.setFont(fnt);
-		g.setColor(Color.white);
-		g.drawString(helpString, (int)helpPos.getX(), (int)helpPos.getY());
-		
-		g.setFont(fnt3);
-		g.drawString(infoString1, (int)infoPos1.getX(), (int)infoPos1.getY());
-		g.drawString(infoString2, (int)infoPos2.getX(), (int)infoPos2.getY());
+		g.setColor(Color.blue);
+		g.drawString(helpString, (int) helpPos.getX(), (int) helpPos.getY());
 
-		g.setFont(fnt2);		
-			
+		g.setFont(fnt3);
+		g.drawString(infoString1, (int) infoPos1.getX(), (int) infoPos1.getY());
+		g.drawString(infoString2, (int) infoPos2.getX(), (int) infoPos2.getY());
+
+		g.setFont(fnt2);
+
+		g.setColor(Color.black);
+		g.fillRect((int) backRect.getX(), (int) backRect.getY(), (int) backRect.getWidth(), (int) backRect.getHeight());
+		g.setColor(Color.white);
+		g.drawRect((int) backRect.getX(), (int) backRect.getY(), (int) backRect.getWidth(), (int) backRect.getHeight());
+		g.drawString(backString, (int) backPos.getX(), (int) backPos.getY());
+		if (backBtnActive) {
+			g.fillRect((int) backRect.getX(), (int) backRect.getY(), (int) backRect.getWidth(),
+					(int) backRect.getHeight());
 			g.setColor(Color.black);
-			g.fillRect((int)backRect.getX(), (int)backRect.getY(), (int)backRect.getWidth(), (int)backRect.getHeight());
-			g.setColor(Color.white);
-			g.drawRect((int)backRect.getX(), (int)backRect.getY(), (int)backRect.getWidth(), (int)backRect.getHeight());
-			g.drawString(backString, (int)backPos.getX(), (int)backPos.getY());
-			if(backBtnActive){
-				g.fillRect((int)backRect.getX(), (int)backRect.getY(), (int)backRect.getWidth(), (int)backRect.getHeight());
-				g.setColor(Color.black);
-				g.drawString(backString, (int)backPos.getX(), (int)backPos.getY());
-			}
+			g.drawString(backString, (int) backPos.getX(), (int) backPos.getY());
+		}
 	}
 }

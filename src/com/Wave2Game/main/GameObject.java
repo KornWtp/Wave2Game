@@ -9,8 +9,8 @@ public abstract class GameObject {
 	protected ID id;
 	protected double velX, velY;
 	protected Handler myHandler;
-	
-	public GameObject (int x, int y, ID id, Handler myHandler){
+
+	public GameObject(int x, int y, ID id, Handler myHandler) {
 		this.x = x;
 		this.y = y;
 		this.id = id;
@@ -18,38 +18,51 @@ public abstract class GameObject {
 	}
 
 	public abstract void tick();
+
 	public abstract void render(Graphics g);
 
 	public void setX(int x) {
 		this.x = x;
 	}
-	public void setY(int y){
+
+	public void setY(int y) {
 		this.y = y;
 	}
-	public void setId(ID id){
+
+	public void setId(ID id) {
 		this.id = id;
 	}
-	public void setVelX(int velX){
+
+	public void setVelX(int velX) {
 		this.velX = velX;
 	}
-	public void setVelY(int velY){
+
+	public void setVelY(int velY) {
 		this.velY = velY;
 	}
-	public int getX(){
+
+	public int getX() {
 		return x;
 	}
-	public int getY(){
+
+	public int getY() {
 		return y;
 	}
-	public ID getId(){
+
+	public ID getId() {
 		return id;
 	}
-	public double getVelX(){
+
+	public double getVelX() {
 		return velX;
 	}
-	public double getVelY(){
+
+	public double getVelY() {
 		return velY;
 	}
-	public Rectangle getBounds(){return new Rectangle(x, y, width, height);}
-	
+
+	public Rectangle getBounds() {
+		return new Rectangle(x, y, width, height);
+	}
+
 }

@@ -1,3 +1,5 @@
+// พลังชีวิต
+
 package com.Wave2Game.main;
 
 import java.awt.*;

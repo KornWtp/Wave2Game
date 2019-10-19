@@ -33,7 +33,7 @@ public class EndScreen {
 		Font fnt2 = new Font("arial", Font.PLAIN, 30);
 		Font fnt3 = new Font("arial", Font.PLAIN, 18);
 		g.setFont(fnt);
-		g.setColor(Color.white);
+		g.setColor(Color.blue);
 		g.drawString(gameOverString, (int) overPos.getX(), (int) overPos.getY());
 
 		g.setFont(fnt3);
@@ -46,18 +46,18 @@ public class EndScreen {
 		g.setFont(fnt2);
 		g.drawString("" + highScoreValue, (int) highScoreValuePos.getX(), (int) highScoreValuePos.getY());
 
-		g.setColor(Color.white);
+		g.setColor(Color.black);
 		if (againBtnActive) {
 			g.fillRect((int) againRect.getX(), (int) againRect.getY(), (int) againRect.getWidth(), (int) againRect.getHeight());
-			g.setColor(Color.black);
+			g.setColor(Color.white);
 		}
 		g.drawString(playAgainString, (int) againPos.getX(), (int) againPos.getY());
 		g.drawRect((int) againRect.getX(), (int) againRect.getY(), (int) againRect.getWidth(), (int) againRect.getHeight());
 
-		g.setColor(Color.white);
+		g.setColor(Color.black);
 		if (quitBtnActive) {
 			g.fillRect((int) quitRect.getX(), (int) quitRect.getY(), (int) quitRect.getWidth(), (int) quitRect.getHeight());
-			g.setColor(Color.black);
+			g.setColor(Color.white);
 		}
 		g.drawString(quitString, (int) quitPos.getX(), (int) quitPos.getY());
 		g.drawRect((int) quitRect.getX(), (int) quitRect.getY(), (int) quitRect.getWidth(), (int) quitRect.getHeight());
