@@ -1,3 +1,27 @@
 # Wave2Game
-#ScrumBoard https://trello.com/b/f6w4GzM9/gamejava
-#Credit https://www.youtube.com/watch?v=1gir2R7G9ws&t=142s
+
+#ภาพ screenshot โปรแกรม <br />
+![full1](https://user-images.githubusercontent.com/52228758/67145241-fd9f9680-f2a9-11e9-89be-b4552a60080e.JPG)
+![full2](https://user-images.githubusercontent.com/52228758/67145251-19a33800-f2aa-11e9-8a62-71a366a42097.JPG)
+
+#รายชื่อสมาชิก<br />
+1.60543206009-9	นาย พีรกิติย์ ชาญณรงค์<br />
+2.60543206002-4	นาย ชนาธิป แซ่ย่าง<br />
+3.60543206013-1	นาย วุฒิกร พรวิทยารัตน์<br />
+4.60543206010-7	นาย พุฒิพงศ์ ไชยแก้วเม<br />
+5.60543206025-5	นาย นิติธร อิ่นคำ<br />
+
+#คำอธิบายโปรแกรม<br />
+เป็นเกมที่ช่วยทดสอบและพัฒนาทักษะการคิด 
+ความมีไหวพริบของผู้เล่น ซึ่งผู้จะต้องหลบหลีกศัตรู(Wave) 
+ที่วิ่งไปมา โดยใช้ลูกศรใน keyboard หรือ 'w'(up), 'a'(left), 's'(down), 'd'(right) 
+ความยากจะเพิ่มขึ้นตาม Level ซึ่งถ้าผู้เล่นโดนศัตรูพลังชีวิตก็จะลดลงและถ้าพลังชีวิตหมดก็จะจบเกม.
+
+#ScrumBoard https://trello.com/b/f6w4GzM9/gamejava <br />
+#Credit https://www.youtube.com/watch?v=1gir2R7G9ws&t=142s <br />
+
+#สิ่งที่ทำเพิ่ม<br />
+1.สร้างตัวละครเป็นการ์ตูนเคลื่อนไหว(ชินจัง.GIF) <br />
+2.แทรกพื้นหลัง(Background) เป็นภาพเคลื่อนไหว(GIF)<br />
+3.แทรกเสียง soundtrack ในเกม<br />
+ 
